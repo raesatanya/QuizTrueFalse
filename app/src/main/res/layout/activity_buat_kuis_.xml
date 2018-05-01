@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quiztruefalse.Buat_kuis_Activity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/gradient3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circle"
+                android:src="@drawable/buatkuis" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:text="KUIS"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:typeface="serif"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-10dp"
+            android:rotation="45"
+            android:src="@drawable/gradient3" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView1"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:id="@+id/imgView_userIcon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:hint="Nama Kuis"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:typeface="serif"/>
+
+            <EditText
+                android:id="@+id/edit_namakuis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_alignTop="@+id/imgView_userIcon1"
+                android:layout_toEndOf="@+id/jumlahkuis"
+                android:layout_toRightOf="@+id/imgView_userIcon1"
+                android:hint="Kuis"
+                android:paddingLeft="20dp"
+                android:textSize="15sp"
+                android:inputType="textUri"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/edit_passwordkuis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_namakuis"
+                android:layout_toEndOf="@+id/jumlahkuis"
+                android:layout_toRightOf="@+id/imgView_userIcon1"
+                android:hint="Password"
+                android:paddingLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="textUri"
+                android:textSize="15sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/imgView_userIcon"
+                android:layout_width="122dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/edit_namakuis"
+                android:layout_toLeftOf="@+id/edit_namakuis"
+                android:layout_toStartOf="@+id/edit_namakuis"
+                android:hint="Password"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:typeface="serif"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="299dp" />
+
+            <TextView
+                android:id="@+id/jumlahkuis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/edit_passwordkuis"
+                android:hint="Jumlah Soal"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinnerjumlahkuis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/jumlahkuis"
+                android:layout_toEndOf="@+id/jumlahkuis"
+                android:layout_toRightOf="@+id/jumlahkuis">
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/onetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/jumlahkuis"
+                android:hint="One Time"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/switchOnetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/onetime"
+                android:layout_alignBottom="@+id/onetime"
+                android:layout_toEndOf="@+id/jumlahkuis"
+                android:layout_toRightOf="@+id/jumlahkuis" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp">
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="350px"
+            android:layout_height="60px"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/gradient3"
+            android:onClick="testquiz"
+            android:text="Add Quiz"
+            android:textColor="@color/white"
+            android:typeface="serif" />
+
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="306dp"-->
+        <!--android:id="@+id/relativeLayout">-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/linearLayout1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:background="@drawable/circle"-->
+                <!--android:padding="10dp"-->
+                <!--android:src="@drawable/buat_kuis"-->
+                <!--android:tint="@color/white" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:fontFamily="sans-serif-medium"-->
+                <!--android:text="KUIS"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="25sp" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView1"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_below="@+id/linearLayout1"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="-10dp"-->
+            <!--android:rotation="45"-->
+            <!--android:src="@drawable/square" />-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/relativeLayout1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_below="@+id/imageView1"-->
+            <!--android:layout_marginTop="35dp">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/imgView_userIcon1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:hint="Nama Kuis"-->
+                <!--android:padding="8dp"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="22sp" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/edit_namakuis"-->
+                <!--android:layout_width="238dp"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:layout_alignTop="@+id/imgView_userIcon1"-->
+                <!--android:layout_toEndOf="@+id/imgView_userIcon1"-->
+                <!--android:layout_toRightOf="@+id/imgView_userIcon1"-->
+                <!--android:background="@color/white"-->
+                <!--android:hint="Kuis"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:textSize="15sp"-->
+                <!--tools:layout_editor_absoluteX="130dp"-->
+                <!--tools:layout_editor_absoluteY="250dp" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/edit_passwordkuis"-->
+                <!--android:layout_width="238dp"-->
+                <!--android:layout_height="48dp"-->
+                <!--android:layout_below="@+id/edit_namakuis"-->
+                <!--android:layout_toEndOf="@+id/imgView_userIcon1"-->
+                <!--android:layout_toRightOf="@+id/imgView_userIcon1"-->
+                <!--android:background="@color/white"-->
+                <!--android:hint="Password"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:textSize="15sp"-->
+                <!--tools:layout_editor_absoluteX="130dp"-->
+                <!--tools:layout_editor_absoluteY="297dp" />-->
+
+        <!--</RelativeLayout>-->
+
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/relativeLayout2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/relativeLayout1"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:layout_marginTop="15dp">-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/imgView_userIcon"-->
+            <!--android:layout_width="122dp"-->
+            <!--android:layout_height="44dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_marginBottom="40dp"-->
+            <!--android:hint="Password"-->
+            <!--android:padding="8dp"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="22sp"-->
+            <!--tools:layout_editor_absoluteX="1dp"-->
+            <!--tools:layout_editor_absoluteY="299dp" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/chkBox1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingHorizontal="120dp"-->
+        <!--android:layout_below="@+id/relativeLayout"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:fontFamily="sans-serif"-->
+        <!--android:onClick="simpan_kuis"-->
+        <!--android:text="SIMPAN"-->
+        <!--android:textColor="@color/white"-->
+        <!--tools:ignore="OnClick" />-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/chkBox1"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:paddingHorizontal="120dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:onClick="testquiz"-->
+        <!--android:text="test"/>-->
+
+<!--</RelativeLayout>-->

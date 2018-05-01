@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quiztruefalse.JawabKuisActivity"
+    android:orientation="vertical"
+    android:background="@drawable/box_shape1"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/spinnerjumlahkuis2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"></Spinner>
+
+        <com.github.lzyzsd.circleprogress.DonutProgress
+            android:id="@+id/donut_progress"
+            android:layout_alignParentRight="true"
+            android:layout_width="73dp"
+            android:layout_height="70dp"/>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        android:background="@color/transparent">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp">
+        <TextView
+            android:id="@+id/textPertanyaan"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_gravity="start"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:gravity="top"
+            android:text="sadasd"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:typeface="serif" />
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pilihanGanda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RadioButton
+                android:id="@+id/Pilihan1"
+                style="@style/ButtonOnRadioGroup"
+                android:text="A."/>
+
+            <RadioButton
+                android:id="@+id/Pilihan2"
+                style="@style/ButtonOnRadioGroup"
+                android:text="B."/>
+
+
+            <RadioButton
+                android:id="@+id/Pilihan3"
+                style="@style/ButtonOnRadioGroup"
+                android:text="C."/>
+
+
+            <RadioButton
+                android:id="@+id/Pilihan4"
+                style="@style/ButtonOnRadioGroup" />
+
+        </RadioGroup>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_before"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Back"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:typeface="serif"
+            style="@style/ButtonOnJawabKuis" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Next"
+            android:layout_weight="1"
+            android:typeface="serif"
+            style="@style/ButtonOnJawabKuis" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_selesai"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingHorizontal="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Result"
+        android:typeface="serif"
+        android:visibility="invisible"
+        style="@style/ButtonOnJawabKuis"/>
+
+
+</LinearLayout>

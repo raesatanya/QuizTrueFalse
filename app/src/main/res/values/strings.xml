@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">QuizTrueFalse</string>
+
+    <string name="Nilai_text">Klik Soal yang diinginkan untuk melihat keseluruhan Nilai dari User Lain.</string>
+    <string name="note">QUIZ TRUE FALSE adalah aplikasi berbasis mobile dengan paltfrom android  sebagai teknologi pendidikan.          Dalam pendidikan QUIZ TRUE FALSE bisa digunakan di kelas atau lingkungan belajar lainnya untuk membuat pembelajaran lebih mudah.          Aplikasi ini memungkin pengguna untuk membuat kuis sesuai dengan keinginan.</string>
+    <string name="tab_label1">Result</string>
+    <string name="tab_label2">Cek Answer</string>
+    <string name="note1">Aplikasi ini dirancang untuk memenuhi Tugas Matakuliah Rekayasa Perangkat Lunak</string>
+
+
+</resources>

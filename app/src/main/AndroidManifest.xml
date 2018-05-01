@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.quiztruefalse">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistrasiActivity" />
+        <activity
+            android:name=".BerandaActivity"
+            android:label="Home" />
+        <activity
+            android:name=".Edit_Profil_Activity"
+            android:label="Edit Data Diri" />
+        <activity
+            android:name=".Buat_kuis_Activity"
+            android:label="Buat Kuis"
+            android:parentActivityName=".BerandaActivity" />
+        <activity
+            android:name=".BuatTestKuis"
+            android:label="Buat Soal Kuis"
+            android:parentActivityName=".Buat_kuis_Activity" />
+        <activity
+            android:name=".ListKuisActivity"
+            android:label="Daftar Kuis"
+            android:parentActivityName=".BerandaActivity" />
+        <activity
+            android:name=".JawabKuisActivity"
+            android:parentActivityName=".ListKuisActivity" />
+        <activity
+            android:name=".ResultActivity"
+            android:label="Hasil Kuis"
+            android:parentActivityName=".ListKuisActivity" />
+        <activity
+            android:name=".ScoreListActivity"
+            android:label="Score List"
+            android:parentActivityName=".ListKuisActivity" />
+        <activity
+            android:name=".UserScoreActivity"
+            android:label="My Score"
+            android:parentActivityName=".BerandaActivity" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:label="About Us"
+            android:parentActivityName=".BerandaActivity" />
+        <activity android:name=".CekJawabanActivity"
+            android:label="Cek Jawaban"
+            android:parentActivityName=".ResultActivity"></activity>
+    </application>
+
+</manifest>

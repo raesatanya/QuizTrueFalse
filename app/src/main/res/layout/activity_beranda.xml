@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="20dp"
+    app:cardPreventCornerOverlap="false"
+    tools:context="com.example.android.quiztruefalse.BerandaActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rellay_timeline"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="#F15050"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:onClick="btn_edit_profil">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgView1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/profile"
+                            android:layout_gravity="center_horizontal"
+                            android:onClick="btn_edit_profil"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imgView1"
+                            android:layout_marginTop="5dp"
+                            android:text="Profil"
+                            android:typeface="serif"
+                            android:textSize="18sp"
+                            android:layout_gravity="center_horizontal"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rellay_friends"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorGrassDark"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_margin="10dp"
+                    android:onClick="buat_kuis">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:onClick="buat_kuis"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/buatkuis" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="Buat Kuis"
+                            android:textSize="18sp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                            android:typeface="serif" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/rellay_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#BCE24A"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:onClick="kuis_list"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/listkuis" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="Kuis List"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                            android:textSize="18sp"
+                            android:typeface="serif" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rellay_music2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#7E50F1"
+                    android:clickable="true"
+                    android:layout_margin="10dp"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:onClick="cek_leaderboard"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/leader" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="LeaderBoard"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                            android:textSize="18sp"
+                            android:typeface="serif" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/rellay_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/violet"
+                    android:clickable="true"
+                    android:layout_margin="10dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:onClick="signout">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/log_out" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="Log Out"
+                            android:textSize="18sp"
+                            android:typeface="serif" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rellay_music"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#50f193"
+                    android:clickable="true"
+                    android:layout_margin="10dp"
+                    android:onClick="about_us"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/about" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="About Us"
+                            android:textSize="18sp"
+                            android:typeface="serif" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>--><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--tools:context="com.example.android.quiztruefalse.BerandaActivity">-->
+
+    <!--<android.support.v7.widget.CardView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_centerInParent="true"--><!--android:layout_marginBottom="20dp"--><!--android:layout_marginLeft="20dp"--><!--android:layout_marginRight="20dp"--><!--android:layout_marginTop="20dp"--><!--app:cardCornerRadius="10dp"--><!--app:cardElevation="3dp"--><!--app:cardPreventCornerOverlap="false"--><!--app:cardUseCompatPadding="true">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentBottom="true"--><!--android:layout_alignParentLeft="true"--><!--android:layout_alignParentStart="true"--><!--android:layout_marginBottom="506dp"--><!--android:orientation="vertical">-->
+
+    <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_margin="10dp"--><!--android:gravity="center"--><!--android:text=""--><!--android:textSize="24sp"--><!--android:textStyle="bold" />-->
+
+    <!--<TextView--><!--android:id="@+id/tvResultNama"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:layout_marginTop="8dp"--><!--android:text="+"--><!--android:textSize="18sp" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<RelativeLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_alignParentTop="true"--><!--android:layout_centerHorizontal="true">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_alignParentLeft="true"--><!--android:layout_alignParentStart="true"--><!--android:layout_alignParentTop="true"--><!--android:orientation="vertical">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_weight="1">-->
+
+    <!--<RelativeLayout--><!--android:id="@+id/rellay_timeline"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_alignParentEnd="true"--><!--android:layout_alignParentRight="true"--><!--android:layout_centerVertical="true"--><!--android:layout_weight="0.65"--><!--android:background="#F15050"--><!--android:clickable="true"--><!--android:onClick="btn_edit_profil"--><!--android:foreground="?attr/selectableItemBackground">-->
+
+    <!--<RelativeLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_centerInParent="true">-->
+
+    <!--<ImageView--><!--android:id="@+id/imgView1"--><!--android:layout_width="60dp"--><!--android:layout_height="60dp"--><!--android:layout_centerHorizontal="true"--><!--android:adjustViewBounds="true"--><!--android:scaleType="centerInside"--><!--android:src="@drawable/profile"--><!--android:onClick="btn_edit_profil"/>-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_below="@+id/imgView1"--><!--android:layout_centerHorizontal="true"--><!--android:layout_marginTop="5dp"--><!--android:text="Profil"--><!--android:typeface="serif"--><!--android:textSize="18sp" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout--><!--android:id="@+id/rellay_friends"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_weight="0.55"--><!--android:background="@color/twitterBlue"--><!--android:clickable="true"--><!--android:onClick="buat_kuis"--><!--android:foreground="?attr/selectableItemBackground">-->
+
+    <!--<RelativeLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_centerInParent="true">-->
+
+    <!--<ImageView--><!--android:id="@+id/imgView2"--><!--android:layout_width="60dp"--><!--android:layout_height="60dp"--><!--android:layout_centerHorizontal="true"--><!--android:adjustViewBounds="true"--><!--android:scaleType="centerInside"--><!--android:src="@drawable/buatkuis"--><!--android:onClick="buat_kuis"/>-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_below="@+id/imgView2"--><!--android:layout_centerHorizontal="true"--><!--android:layout_marginTop="5dp"--><!--android:text="Buat Kuis"--><!--android:typeface="serif"--><!--android:textSize="18sp" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_marginTop="15dp"--><!--android:layout_weight="1">-->
+
+    <!--<RelativeLayout--><!--android:id="@+id/rellay_chat"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_weight="0.55"--><!--android:background="#BCE24A"--><!--android:clickable="true"-->
+
+    <!--android:foreground="?attr/selectableItemBackground">-->
+
+    <!--<RelativeLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_centerInParent="true">-->
+
+    <!--<ImageView--><!--android:id="@+id/imgView3"--><!--android:layout_width="60dp"--><!--android:layout_height="60dp"--><!--android:layout_centerHorizontal="true"--><!--android:adjustViewBounds="true"--><!--android:scaleType="centerInside"--><!--android:onClick="kuis_list"--><!--android:src="@drawable/listkuis" />-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_below="@+id/imgView3"--><!--android:layout_centerHorizontal="true"--><!--android:layout_marginTop="5dp"--><!--android:text="Kuis List"--><!--android:textSize="18sp"--><!--android:typeface="serif"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout--><!--android:id="@+id/rellay_music"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_weight="0.65"--><!--android:background="#7E50F1"--><!--android:clickable="true"--><!--android:foreground="?attr/selectableItemBackground">-->
+
+    <!--<RelativeLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_centerInParent="true">-->
+
+    <!--<ImageView--><!--android:id="@+id/imgView4"--><!--android:layout_width="60dp"--><!--android:layout_height="60dp"--><!--android:layout_centerHorizontal="true"--><!--android:adjustViewBounds="true"--><!--android:scaleType="centerInside"--><!--android:src="@drawable/leader"--><!--android:onClick="cek_leaderboard"/>-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_below="@+id/imgView4"--><!--android:layout_centerHorizontal="true"--><!--android:layout_marginTop="5dp"--><!--android:text="LeaderBoard"--><!--android:textSize="18sp"--><!--android:typeface="serif"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_marginTop="15dp"--><!--android:layout_weight="1">-->
+
+    <!--<RelativeLayout--><!--android:id="@+id/rellay_gallery"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_weight="0.55"--><!--android:background="@color/violet"--><!--android:clickable="true"--><!--android:onClick="signout"--><!--android:foreground="?attr/selectableItemBackground">-->
+
+    <!--<RelativeLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_centerInParent="true">-->
+
+    <!--<ImageView--><!--android:id="@+id/imgView5"--><!--android:layout_width="60dp"--><!--android:layout_height="60dp"--><!--android:layout_centerHorizontal="true"--><!--android:adjustViewBounds="true"--><!--android:scaleType="centerInside"--><!--android:src="@drawable/log_out" />-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_below="@+id/imgView5"--><!--android:layout_centerHorizontal="true"--><!--android:layout_marginTop="5dp"--><!--android:text="Log Out"--><!--android:textSize="18sp"--><!--android:typeface="serif"/>--><!--</RelativeLayout>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout--><!--android:id="@+id/rellay_music"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_weight="0.50"--><!--android:background="#50f193"--><!--android:clickable="true"--><!--android:foreground="?attr/selectableItemBackground">-->
+
+    <!--<RelativeLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_centerInParent="true">-->
+
+    <!--<ImageView--><!--android:id="@+id/imgView4"--><!--android:layout_width="60dp"--><!--android:layout_height="60dp"--><!--android:layout_centerHorizontal="true"--><!--android:adjustViewBounds="true"--><!--android:scaleType="centerInside"--><!--android:src="@drawable/about"--><!--android:onClick="cek_leaderboard"/>-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_below="@+id/imgView4"--><!--android:layout_centerHorizontal="true"--><!--android:layout_marginTop="5dp"--><!--android:text="About Us"--><!--android:textSize="18sp"--><!--android:typeface="serif"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--</RelativeLayout>--><!--</LinearLayout>--><!--</LinearLayout>--><!--</RelativeLayout>--><!--</android.support.v7.widget.CardView>--><!--</RelativeLayout>-->
